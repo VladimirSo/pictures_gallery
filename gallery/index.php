@@ -1,4 +1,6 @@
 <?php 
+// error_reporting(E_ALL);
+
 require_once ($_SERVER['DOCUMENT_ROOT'] . '/data/constants.php');
 require_once ($_SERVER['DOCUMENT_ROOT'] . '/src/get_readable_filesize.php');
 
@@ -6,6 +8,8 @@ $contentDir = $_SERVER['DOCUMENT_ROOT'] . '/upload/';
 $contentArr = [];
 
 if (isset($_POST['delete'])) {
+//    var_dump($_POST['delete']);
+
     $arrForDel = [];
 
     if (isset($_POST['delAll'])) {
